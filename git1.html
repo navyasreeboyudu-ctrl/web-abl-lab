@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Academic Dashboard</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f1f1;
+      color: #222;
+    }
+
+    .dashboard {
+      display: flex;
+      max-width: 1000px;
+      min-height: 700px;
+      margin: 30px auto;
+      background: #f1f1f1;
+    }
+
+    /* Left menu */
+    .sidebar {
+      width: 180px;
+      padding: 20px 15px;
+      background: #514c9b;
+      color: white;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 18px 0;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .main-content h1 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .card {
+      margin-bottom: 12px;
+      padding: 16px;
+      background: white;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    /* Attendance bars */
+    .progress-bar {
+      height: 18px;
+      margin: 6px 0 12px;
+      background: #ccc;
+    }
+
+    .progress {
+      height: 100%;
+      background: green;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .dashboard {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .sidebar a {
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <h2>Dashboard</h2>
+      <a href="#details">Student Details</a>
+      <a href="#results">Results</a>
+      <a href="#attendance">Attendance</a>
+      <a href="#exams">Exams</a>
+      <a href="#announcements">Announcements</a>
+    </aside>
+
+    <main class="main-content">
+      <h1>Student Academic Dashboard</h1>
+
+      <section class="card" id="details">
+        <h2>Student Details</h2>
+        <p>Name: Navya</p>
+        <p>Course: Computer Science</p>
+        <p>Semester: 1</p>
+      </section>
+
+      <section class="card" id="results">
+        <h2>Semester Results</h2>
+        <table>
+          <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>Math</td>
+            <td>85</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>90</td>
+            <td>A+</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="card" id="attendance">
+        <h2>Attendance</h2>
+
+        <p>Math: 90%</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 90%;">90%</div>
+        </div>
+
+        <p>Computer Science: 80%</p>
+        <div class="progress-bar">
+          <div class="progress" style="width: 80%;">80%</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Subjects</h2>
+        <p>Math, Computer Science, English</p>
+      </section>
+
+      <section class="card" id="exams">
+        <h2>Examination Schedule</h2>
+        <p>Math: November 10</p>
+        <p>Computer Science: November 12</p>
+      </section>
+
+      <section class="card" id="announcements">
+        <h2>Announcements</h2>
+        <p>Examinations begin next month.</p>
+        <p>Please return library books by Friday.</p>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>
