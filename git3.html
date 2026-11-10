@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore India</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .page {
+      width: 80%;
+      margin: 20px auto;
+      border-bottom: 3px solid black;
+    }
+
+    header {
+      background-color: #267367;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #14554d;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    section {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    section h2 {
+      color: #267367;
+      font-size: 20px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 180px;
+      padding: 10px;
+      background-color: #eef4f2;
+      border-radius: 5px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header>
+      <h1>Explore India</h1>
+      <p>Discover India's history, culture, and beautiful places</p>
+    </header>
+
+    <nav>
+      <a href="#north">North India</a>
+      <a href="#south">South India</a>
+      <a href="#festivals">Festivals</a>
+      <a href="#food">Local Food</a>
+      <a href="#tips">Travel Tips</a>
+    </nav>
+
+    <main>
+      <section id="north">
+        <h2>North India: Historical Places</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523" alt="Taj Mahal">
+            <h3>Taj Mahal</h3>
+            <p>A famous marble monument in Agra.</p>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33" alt="Jaipur Palace">
+            <h3>Jaipur Palace</h3>
+            <p>Explore the palaces and forts of Rajasthan.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="south">
+        <h2>South India: Famous Destinations</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944" alt="Kerala landscape">
+            <h3>Kerala Backwaters</h3>
+            <p>Enjoy peaceful boat rides and green landscapes.</p>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1600100397608-f010f1f6f5d7" alt="Hampi temple">
+            <h3>Hampi</h3>
+            <p>Visit ancient temples and historic stone ruins.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="festivals">
+        <h2>Cultural Festivals</h2>
+        <p><b>Diwali:</b> The festival of lights, celebrated across India.</p>
+        <p><b>Onam:</b> A harvest festival celebrated in Kerala.</p>
+        <p><b>Holi:</b> A colourful spring festival.</p>
+      </section>
+
+      <section id="food">
+        <h2>Local Cuisine</h2>
+        <p><b>North India:</b> Biryani, chole bhature, and butter naan.</p>
+        <p><b>South India:</b> Dosa, idli, and Kerala fish curry.</p>
+      </section>
+
+      <section id="tips">
+        <h2>Travel Tips</h2>
+        <ul>
+          <li>Carry water and comfortable shoes.</li>
+          <li>Check opening times before visiting monuments.</li>
+          <li>Respect local customs and keep historic places clean.</li>
+        </ul>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>
