@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Good Food Restaurant</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    .page {
+      width: 80%;
+      margin: 30px auto;
+      background-color: #fff8f3;
+      border-bottom: 3px solid black;
+    }
+
+    .header {
+      background-color: #f4511e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      margin: 0 0 10px;
+      font-size: 24px;
+    }
+
+    .header p {
+      font-size: 14px;
+    }
+
+    .menu {
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    .offer {
+      background-color: #ffb400;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .food-list {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .food-card {
+      width: 200px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px #ccc;
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .price {
+      color: #f4511e;
+      font-weight: bold;
+    }
+
+    button {
+      background-color: #f4511e;
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: 95%;
+      }
+
+      .food-list {
+        flex-direction: column;
+      }
+
+      .food-card {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="header">
+      <h1>Good Food Restaurant</h1>
+      <p>Fresh and tasty meals delivered to you</p>
+      <p>★ 4.5 | Open today: 10 AM – 10 PM</p>
+    </div>
+
+    <div class="menu">
+      <a href="#pizza">Pizza</a>
+      <a href="#burgers">Burgers</a>
+      <a href="#drinks">Drinks</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+
+    <div class="content">
+
+      <div class="offer">
+        <h2>Special Offer</h2>
+        <p>Get 20% off your first order!</p>
+      </div>
+
+      <h2 id="pizza">Pizza</h2>
+
+      <div class="food-list">
+
+        <div class="food-card">
+          <img src="https://images.unsplash.com/photo-157 Pizza" alt="Cheese pizza">
+          <h3>Cheese Pizza</h3>
+          <p>Classic pizza with cheese and tomato.</p>
+          <p class="price">150/-</p>
+          <button>Order Now</button>
+        </div>
+
+        <div class="food-card" id="burgers">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+          <h3>Burger</h3>
+          <p>Juicy burger with lettuce and tomato.</p>
+          <p class="price">800</p>
+          <button>Order Now</button>
+        </div>
+
+        <div class="food-card" id="drinks">
+          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7" alt="Cold drink">
+          <h3>Cold Drink</h3>
+          <p>Refreshing drink served chilled.</p>
+          <p class="price">200</p>
+          <button>Order Now</button>
+        </div>
+
+      </div>
+
+      <h2 id="reviews">Customer Reviews</h2>
+      <p>“The food was delicious and arrived quickly!” — Mary</p>
+      <p>“Great service and tasty pizza.” — Heena</p>
+
+    </div>
+  </div>
+
+</body>
+</html>
